@@ -13,3 +13,142 @@
     margin: 0;
     padding: 0;
 }
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 1.8rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2, h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.arrow__left {
+    transform: rotate(180deg);
+}
+.main {
+    width: 100%;
+    .main__section {
+        padding-block: 80px;
+        padding-inline: 16px;
+    }
+}
+
+
+.section__home {
+    background-image: url(https://thumbs.dreamstime.com/b/foto-blanco-y-negro-de-la-mujer-hermosa-51980900.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 448px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 36px;
+    color: var(--light);
+    text-align: center;
+    text-transform: uppercase;
+
+    & h1 {
+        font-size: 5rem;
+    }
+    & a {
+        padding: 8px 16px;
+        border: 1px solid var(--light);
+    }
+}
+.section__about {
+    border-bottom: 1px solid var(--dark);
+    .section__about__text {
+        margin: 0 auto;
+        max-width: 600px;
+        display: grid;
+        gap: 24px;
+
+        & h2 {
+            padding-bottom: 24px;
+            font-size: 2.4rem;
+            font-weight: bold;
+            border-bottom: 1px solid var(--dark);
+            text-transform: none;
+        }
+        .section__about__buttton {
+            margin-top: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            & a {
+                font-size: 2rem;
+                text-transform: uppercase;
+                padding: 12px 24px;
+                background-color: var(--dark);
+                color: var(--light)
+            }
+            .section__about__figure {
+                width: auto;
+            }
+        }
+    }
+}
+.section__services {
+    .services__box {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 24px;
+    }
+    .services__item {
+        height: 280px;
+        padding: 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+        background-color: var(--dark);
+        color: var(--light);
+        text-align: center;
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+
+        & h3 {
+            font-size: 2.4rem;
+        }
+        .services__item__figures {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+        .services__item__figure {
+            width: auto;
+        }
+        & path {
+            fill: var(--light2);
+        }
+        .services__item__link {
+            font-size: 2rem;
+            text-decoration: underline;
+            color: var(--gray3);
+        }
+    }
+}
+.footer {
+    background-color: var(--gray3);
+    padding: 40px 16px;
+    .footer__nav {
+        margin-bottom: 36px;
+        & h2 {
+            margin-bottom: 16px;
+        }
+    }
+    .social__list {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+}

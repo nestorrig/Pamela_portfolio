@@ -45,14 +45,14 @@ blockquote:before, blockquote:after, q:before, q:after {
     content: none;
 }
     /** Configuramos el texto que seleccionamos */
-/* ::-moz-selection {
-    background-color: var(--negro);
-    color: var(--blanco);
+::-moz-selection {
+    background-color: var(--gray1);
+    color: var(--light);
 }
 ::selection {
-    background-color: var(--negro);
-    color: var(--blanco);
-} */
+    background-color: var(--gray1);
+    color: var(--light);
+}
 form, input, textarea, select, button, label {
     font-family: inherit;
     font-size: inherit;
