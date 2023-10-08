@@ -30,7 +30,7 @@ function renderizeHegagonHeight() {
                 item.style.left = -(width/5) +'px'
             }
         }
-        if (window.innerWidth >= 1136) {
+        if (window.innerWidth >= 1280) {
             restartValues()
             servicesBox.style.left = -(width/7) +'px'
             if (i === 1) {
