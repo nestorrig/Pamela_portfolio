@@ -191,7 +191,7 @@ h2, h3 {
             }
         }
         & h3 {
-            font-size: 2.4rem;
+            font-size: 1.8rem;
             width: 80%;
         }
         .services__item__figures {
@@ -220,7 +220,7 @@ h2, h3 {
         max-width: 800px;
         border-bottom: 2px solid var(--dark);
         border-top: 2px solid var(--dark);
-        
+
         .service__text__item {
             padding-block: 40px;
             margin: 0 auto;
@@ -231,6 +231,13 @@ h2, h3 {
             max-width: 700px;
             & p {
                 overflow: hidden;
+            }
+            & hr {
+                margin-top: 16px;
+            }
+            & h5 {
+                font-weight: bold;
+                margin-bottom: 8px;
             }
             &.active {
                 display: grid;
