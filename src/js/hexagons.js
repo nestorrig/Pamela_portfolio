@@ -9,9 +9,9 @@ function renderizeHegagonHeight() {
         item.style.height = height + 'px' 
         restartValues()
         
-        console.log(i);
+        // console.log(i);
         if (window.innerWidth >= 600) {
-            console.log('tablet');
+            // console.log('tablet');
             if (i % 2 !== 0) {
                 item.style.top = height/1.8 +'px'
                 item.style.left = -(width/10) +'px'
@@ -26,7 +26,7 @@ function renderizeHegagonHeight() {
                 item.style.top = height/1.8 +'px'
                 item.style.left = -(width/10) +'px'
             } else if (i % 3 === 2) {
-                console.log('derecha');
+                // console.log('derecha');
                 item.style.left = -(width/5) +'px'
             }
         }
