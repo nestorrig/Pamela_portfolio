@@ -15,6 +15,7 @@
 }
 html {
     font-size: 62.5%;
+    font-weight: 500;
     scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
@@ -105,6 +106,9 @@ h2, h3 {
         border: 1px solid var(--light);
         transition: all .3s;
         &:hover {
+            background-color: var(--secondary);
+        }
+        &:active {
             background-color: var(--primary);
         }
     }
@@ -123,7 +127,7 @@ h2, h3 {
             font-size: 2.4rem;
             font-weight: bold;
             border-bottom: 1px solid var(--dark);
-            text-transform: none;
+            color: var(--secondary);
         }
         .section__about__buttton {
             padding: 24px 0px;
@@ -148,15 +152,21 @@ h2, h3 {
                 background-color: var(--dark);
                 color: var(--light);
                 transition: all .3s;
+                &:hover {
+                    background-color: var(--secondary);
+                    ~ .section__about__figure svg {
+                        fill: var(--secondary);
+                    }
+                }
+                &:active {
+                    background-color: var(--primary);
+                    ~ .section__about__figure svg {
+                        fill: var(--primary);
+                    }
+                }
             }
             .section__about__figure {
                 width: 40px;
-            }
-            & a:hover {
-                background-color: var(--primary);
-                ~ .section__about__figure svg {
-                    fill: var(--primary);
-                }
             }
         }
     }
@@ -211,6 +221,9 @@ h2, h3 {
             color: var(--gray3);
             cursor: pointer;
             &:hover {
+                color: var(--light2);
+            }
+            &:active {
                 color: var(--primary);
             }
         }
@@ -218,17 +231,18 @@ h2, h3 {
     .services__texts {
         margin: 0 auto;
         max-width: 800px;
-        border-bottom: 2px solid var(--dark);
-        border-top: 2px solid var(--dark);
+        border-bottom: 2px solid var(--secondary);
+        border-top: 2px solid var(--secondary);
+        border-radius: 16px;
 
         .service__text__item {
-            padding-block: 40px;
+            padding: 64px 8px 40px;
             margin: 0 auto;
             display: none;
             /* display: grid;
             grid-template-rows: 0fr; */
             transition: .3s all;
-            max-width: 700px;
+            max-width: 640px;
             & p {
                 overflow: hidden;
             }
@@ -239,7 +253,13 @@ h2, h3 {
                 font-weight: bold;
                 margin-bottom: 8px;
             }
+            & h3 {
+                font-size: 2.4rem;
+                margin-bottom: 24px;
+                color: var(--secondary);
+            }
             &.active {
+                margin-top: -24px;
                 display: grid;
                 grid-template-rows: 1fr;
                 transition: .3s all;
@@ -297,7 +317,7 @@ h2, h3 {
         }
     }
     & a:hover {
-        color: var(--secondary);
+        color: var(--gray3);
     }
     & p, a {
         font-size: 1.4rem;
